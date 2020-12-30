@@ -1,0 +1,16 @@
+<div class="container">
+    <div>
+        <h2>Ajouter un Voiture :</h2>
+    </div>
+    <form>
+        <div class="col-sm-2 col-md-2 col-lg-2"> <label>Matricule de Voiture</label> <input type="text"
+                [(ngModel)]="newVoiture.matriculeVoit" name="matriculeVoit" class="form-control"> </div>
+        <div class="col-sm-4 col-md-4 col-lg-4"> <label>Marque Voiture</label> <input type="text"
+                [(ngModel)]="newVoiture.marqueVoit" name="marqueVoit" class="form-control"> </div>
+        <div class="col-sm-2 col-md-2 col-lg-2"> <label>Prix Voiture</label> <input type="number"
+                [(ngModel)]="newVoiture.prixVoit" name="prixVoit" class="form-control"> </div>
+        <div class="col-sm-4 col-md-4 col-lg-4"> <label>Date création</label> <input type="date"
+                [(ngModel)]="newVoiture.dateRelease" name="dateRelease" class="form-control"> </div>
+        <div class="mt-2"> <button type="submit" (click)="addVoiture()" class="btn btn-success">Ajouter</button> </div>
+    </form>
+</div>
